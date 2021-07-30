@@ -1,0 +1,19 @@
+{
+  "name": "g1-platform-testauto-interview",
+  "version": "1.0.0",
+  "description": "Package used for the technical part of the interview",
+  "main": "index.js",
+  "repository": "https://github.com/Arthy000/g1-platform-testauto-interview.git",
+  "author": "Arthur Warnier <arthur.warnier@gaming1.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@cucumber/cucumber": "^7.3.1",
+    "@cucumber/cucumber-expressions": "^12.1.1",
+    "gherkin-testcafe": "^5.1.0",
+    "testcafe": "^1.15.1"
+  },
+  "scripts": {
+    "e2e": "gherkin-testcafe chrome features/*.feature steps/*.js "
+  }
+}
