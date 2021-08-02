@@ -38,6 +38,15 @@ To start, you will need:
   - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
+Once you have cloned the repo and installed all the tools, you can open a
+terminal and use
+
+```bash
+yarn
+```
+
+It will install all the required packages.
+
 ## Starting the scripts
 
 In a terminal, start the [e2e script](./package.json#L17) by typing
@@ -134,7 +143,7 @@ Several steps of the same type may be linked by replacing their keyword with
 Given something
 And something else
 When the user does one thing
-But the user doensn't do the other thing
+But the user doesn't do the other thing
 ```
 
 #### Scenario organization

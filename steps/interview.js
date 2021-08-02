@@ -13,6 +13,15 @@ const getPageUrl = (t) =>
 /* GIVENS */
 
 Given(/the user opened my site/, async (t) => {
+  /* 
+  Use configuration.json to define whatever url you'd like
+
+  Some site may use captcha or other weird behaviors when they detect that the
+  browser is being controlled by scripts, don't waste your time with these and
+  pick another site
+
+  => GitHub is recommended 
+   */
   const { targetSite } = await require('../configuration.json');
   await t.navigateTo(targetSite);
 });

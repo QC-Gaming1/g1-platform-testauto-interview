@@ -66,7 +66,7 @@ export const createPage = (t = undefined) => {
     login: {
       usernameInput: getSelector('css selector'),
       passwordInput: getSelector('css selector'),
-      // Task 3b: add the selector for the submit button
+      // Task 3: add missing selector(s)
     },
   };
 

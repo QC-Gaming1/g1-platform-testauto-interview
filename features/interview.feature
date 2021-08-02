@@ -21,7 +21,7 @@ Feature: Technical test
         When the user opens the login form
         Then the login form should be dispayed
 
-    # Task 3a: write and implement this scenario (use credentials in configuration.json)
+    # Task 3: write and implement this scenario (use credentials in configuration.json)
     Scenario: My site - user login
         Then implementz me pliz
 
