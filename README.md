@@ -55,11 +55,24 @@ In a terminal, start the [e2e script](./package.json#L17) by typing
 yarn e2e
 ```
 
+All tests will run, but only one test should pass.
+
 ## Goals of the test
 
 This technical test was made to ensure a sufficient understanding of the various
 tools that are used in the real product, as well as assess your ability to
 learn, adapt, and find information.
+
+### Where to start
+
+Open the [feature file](./features/interview.feature).
+There, you'll find your main tasks.
+
+The implementation of the steps defined in the `feature` file is located in the
+[step file](./steps/interview.ts).
+
+Finally, the [page model](./steps/pageModel.ts) regroups all the selectors to
+make interactions with the page easier to read.
 
 ### Familiarization with the tools
 

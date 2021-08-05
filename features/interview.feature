@@ -19,14 +19,14 @@ Feature: Technical test
     Scenario: My site - open login form
         Given the user opened my site
         When the user opens the login form
-        Then the login form should be dispayed
+        Then the login form should be displayed
 
     # Task 3: write and implement this scenario (use credentials in configuration.json)
     Scenario: My site - user login
         Then implementz me pliz
 
     # Task 4: write a test that depends on the login as a prerequisite
-    Scenario: My site - TBD
+    Scenario: My site - Test to determine
         Then implementz me pliz
 
     # Task 5: Luckygames - go to Tournaments and check that AT LEAST one
