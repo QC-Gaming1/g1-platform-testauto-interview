@@ -35,6 +35,8 @@ When(/the user navigates to (.+)/, async (t, [site]) => {
 When(/the user opens the login form/, async (t) => {
   const page = createPage(t);
   // TODO: see Task 2
+  // See TestCafe TestController and its function
+  // https://testcafe.io/documentation/402833/guides/basic-guides/interact-with-the-page
 });
 
 /* THENS */

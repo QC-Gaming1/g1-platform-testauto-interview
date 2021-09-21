@@ -38,7 +38,7 @@ export const createPage = (t = undefined) => {
    * @param testId a test id or an array of test id (from parent to child)
    * @param rootElement a selector as the base search context
    */
-  const getByTestId = ({ testId, rootElement = undefined }, t = undefined) => {
+  const getByTestId = (testId, rootElement = undefined) => {
     const testIds = Array.isArray(testId) ? testId : [testId];
     if (!testIds.length) {
       throw new Error('Empty selector array provided');
@@ -72,7 +72,7 @@ export const createPage = (t = undefined) => {
 
   // see Task 5: how testids make everything simpler!
   const luckygames = {
-    topnav: { tournaments: getByTestId('topnav-tournaments') },
+    topnav: { tournaments: getByTestId({ testId: 'topnav-tournaments' }) },
   };
 
   return { luckygames, mySite };

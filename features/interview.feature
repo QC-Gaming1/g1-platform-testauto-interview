@@ -15,17 +15,18 @@ Feature: Technical test
             | google   |
             | facebook |
 
-    # Task 2: implement this scenario
+    # Task 2: implement this scenario for a site of your choice
     Scenario: My site - open login form
         Given the user opened my site
         When the user opens the login form
         Then the login form should be displayed
 
-    # Task 3: write and implement this scenario (use credentials in configuration.json)
-    Scenario: My site - user login
+    # Task 3: write and implement this scenario FROM SCRATCH (set VALID
+    # credentials in configuration.json)
+    Scenario: My site - user successful login
         Then implementz me pliz
 
-    # Task 4: write a test that depends on the login as a prerequisite
+    # Task 4: write a test that depends on a successful login as a prerequisite
     Scenario: My site - Test to determine
         Then implementz me pliz
 
