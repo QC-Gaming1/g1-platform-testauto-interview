@@ -69,9 +69,9 @@ Open the [feature file](./features/interview.feature).
 There, you'll find your main tasks.
 
 The implementation of the steps defined in the `feature` file is located in the
-[step file](./steps/interview.ts).
+[step file](./steps/interview.js).
 
-Finally, the [page model](./steps/pageModel.ts) regroups all the selectors to
+Finally, the [page model](./steps/pageModel.js) regroups all the selectors to
 make interactions with the page easier to read.
 
 ### Familiarization with the tools
@@ -80,7 +80,7 @@ This is obvious: by the end of the test, you'll hopefully understand
 what it is that we do, why we do it, and how.
 
 This will help us figure out if you are a match for the team, and help you
-figure out if this projet is a match for you too.
+figure out if this project is a match for you too.
 
 ### Comprehension of the documentation
 
@@ -90,13 +90,13 @@ information in the various documentation at your disposal?
 #### TestCafe
 
 [TestCafe](https://testcafe.io/documentation/402634/guides) is a Node package
-that acts as a proxy. It encapsulates the web page you want to interract with.
+that acts as a proxy. It encapsulates the web page you want to interact with.
 It sends events to the actual front (the website) in a way that is virtually
 indistinguishable from a real user.
 
 Scripts use the
 [TestController](https://testcafe.io/documentation/402833/guides/basic-guides/interact-with-the-page)
-object provided by TestCafe to interract with the page.
+object provided by TestCafe to interact with the page.
 
 It also provides a
 [Selector](https://testcafe.io/documentation/402829/guides/basic-guides/select-page-elements)
@@ -192,7 +192,7 @@ declared in the code as a `Given` can actually be used as any kind of step
 (Given, When or Then)
 
 This is explained in the documentation from Cucumber as a way to force
-developers to write steps with a name that cannot gramatically be reused with
+developers to write steps with a name that cannot grammatically be reused with
 other kinds of steps.
 
 The result that we reached in our package is that:
@@ -219,7 +219,7 @@ The result that we reached in our package is that:
   # neutral
   When the user opens the page
 
-  # failure is implicitely expected
+  # failure is implicitly expected
   When the user tries to open the page
   ```
 
@@ -233,7 +233,7 @@ The result that we reached in our package is that:
 ### JavaScript/TypeScript
 
 Some common sense is expected when implementing steps.
-For instence, the use of at least one
+For instance, the use of at least one
 [assertion](https://testcafe.io/documentation/402837/guides/basic-guides/assert)
 is required in order for the test to be reliable.
 The absence of assertion implies that no test is conducted, so a successful test

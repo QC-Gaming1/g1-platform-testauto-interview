@@ -72,7 +72,7 @@ export const createPage = (t = undefined) => {
 
   // see Task 5: how testids make everything simpler!
   const luckygames = {
-    topnav: { tournaments: getByTestId({ testId: 'topnav-tournaments' }) },
+    topnav: { tournaments: getByTestId('topnav-tournaments') },
   };
 
   return { luckygames, mySite };
