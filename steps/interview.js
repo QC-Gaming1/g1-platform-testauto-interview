@@ -22,7 +22,7 @@ Given(/the user opened my site/, async (t) => {
 
   => GitHub is recommended 
    */
-  const { targetSite } = await require('../configuration.json');
+  const { targetSite } = require('../configuration.json');
   await t.navigateTo(targetSite);
 });
 
