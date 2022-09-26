@@ -14,6 +14,6 @@
     "testcafe": "^1.15.1"
   },
   "scripts": {
-    "e2e": "gherkin-testcafe chrome features/*.feature steps/*.js "
+    "e2e": "gherkin-testcafe chrome features/*.feature steps/*.js -e"
   }
 }
