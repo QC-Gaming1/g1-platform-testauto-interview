@@ -23,6 +23,7 @@ Feature: Technical test
 
     # Task 3: write and implement this scenario FROM SCRATCH (set VALID
     # credentials in configuration.json)
+    # Tips: Don't use roles
     Scenario: My site - user successful login
         Then implementz me pliz
 
