@@ -35,8 +35,6 @@ To start, you will need:
 - [NodeJS](https://nodejs.org/en/) (LTS version for stability)
 - [Yarn](https://classic.yarnpkg.com/en/docs/install#windows-stable)
 - [Visual Studio Code](https://code.visualstudio.com/)
-  - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 Once you have cloned the repo and installed all the tools, you can open a
 terminal and use
@@ -245,11 +243,14 @@ If you were able to build tests as described [here](#scenario-organization), the
 the JS implementation should follow the same logic. Use function to avoid
 repeating code.
 
-#### Linter warnings
+# Send the results
 
-Most of the projects you may end up working on, should you accept the job, will
-use some form of linter. This package uses ESLint, for instance.
+When you finished the test you can send the following files at dominique.pino@gaming1.com :
 
-Keep in mind that most of these warnings/errors are there to prevent bad practice and
-keep the codebase uniform. For that reason, disabling a warning should be
-justified in a comment.
+- interview.feature
+- interview.js
+- pageModel.js
+
+/!\ If you automated another website than github, don't forget to mention the website's url. /!\
+
+Note that most of mailbox will not accept js files if it's the case just change the extension to .txt.
