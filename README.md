@@ -32,6 +32,7 @@ Read it carefully. Or don't, if you dare.
 
 To start, you will need:
 
+- [Git bash](https://git-scm.com/downloads)
 - [NodeJS](https://nodejs.org/en/) (LTS version for stability)
 - [Yarn](https://classic.yarnpkg.com/en/docs/install#windows-stable)
 - [Visual Studio Code](https://code.visualstudio.com/)
@@ -53,7 +54,7 @@ In a terminal, start the [e2e script](./package.json#L17) by typing
 yarn e2e
 ```
 
-All tests will run, but only one test should pass.
+All tests will run, but only two tests should pass.
 
 ## Goals of the test
 
@@ -67,9 +68,9 @@ Open the [feature file](./features/interview.feature).
 There, you'll find your main tasks.
 
 The implementation of the steps defined in the `feature` file is located in the
-[step file](./steps/interview.js).
+[step file](./steps/interview.ts).
 
-Finally, the [page model](./steps/pageModel.js) regroups all the selectors to
+Finally, the [page model](./steps/pageModel.ts) regroups all the selectors to
 make interactions with the page easier to read.
 
 ### Familiarization with the tools
@@ -85,26 +86,17 @@ figure out if this project is a match for you too.
 This is also pretty straightforward: are you able to find and use
 information in the various documentation at your disposal?
 
-#### TestCafe
+#### The runner
 
-[TestCafe](https://testcafe.io/documentation/402634/guides) is a Node package
-that acts as a proxy. It encapsulates the web page you want to interact with.
-It sends events to the actual front (the website) in a way that is virtually
-indistinguishable from a real user.
+[Playwright](https://playwright.dev/docs/intro) was created specifically to accommodate the needs of end-to-end testing. Playwright supports all modern rendering engines including Chromium, WebKit, and Firefox. Test on Windows, Linux, and macOS, locally or on CI, headless or headed with native mobile emulation of Google Chrome for Android and Mobile Safari.
 
-Scripts use the
-[TestController](https://testcafe.io/documentation/402833/guides/basic-guides/interact-with-the-page)
-object provided by TestCafe to interact with the page.
+[Locators](https://playwright.dev/docs/api/class-locator) are used to defined the elements which with the test will interact. They use [CSS selectors](https://www.w3schools.com/cssref/css_selectors.php)
 
-It also provides a
-[Selector](https://testcafe.io/documentation/402829/guides/basic-guides/select-page-elements)
-interface that can be used to access the attributes of the matching elements,
-and **even count the matching elements**!
+[CucumberJs](https://cucumber.io/docs/guides/) is a tool that supports Behavior-Driven Development(BDD). If you’re new to Behavior-Driven Development read our BDD introduction first.
 
-#### Gherkin-TestCafe
+[Cucumber Expressions](https://github.com/cucumber/cucumber-expressions#readme) are used to define more complex steps with parameters.
 
-[Gharkin-Testcafe](https://github.com/Arthy000/gherkin-testcafe) is a package
-that extends TestCafe to add [Cucumber](https://cucumber.io/) scenario definition.
+[ITestController] is the object that allow the tests to access to the page and it's context.
 
 ### Scenario definition
 
@@ -228,11 +220,11 @@ The result that we reached in our package is that:
   Then the page should be displayed
   ```
 
-### JavaScript/TypeScript
+### TypeScript
 
 Some common sense is expected when implementing steps.
 For instance, the use of at least one
-[assertion](https://testcafe.io/documentation/402837/guides/basic-guides/assert)
+[assertion](https://playwright.dev/docs/test-assertions)
 is required in order for the test to be reliable.
 The absence of assertion implies that no test is conducted, so a successful test
 that contains no assertion is essentially meaningless.
@@ -240,17 +232,5 @@ that contains no assertion is essentially meaningless.
 #### Logic reusability
 
 If you were able to build tests as described [here](#scenario-organization), then
-the JS implementation should follow the same logic. Use function to avoid
+the TS implementation should follow the same logic. Use function to avoid
 repeating code.
-
-# Send the results
-
-When you finished the test you can send the following files at dominique.pino@gaming1.com :
-
-- interview.feature
-- interview.js
-- pageModel.js
-
-/!\ If you automated another website than github, don't forget to mention the website's url. /!\
-
-Note that most of mailbox will not accept js files if it's the case just change the extension to .txt.
