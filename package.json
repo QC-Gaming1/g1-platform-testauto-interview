@@ -1,19 +1,21 @@
 {
   "name": "g1-platform-testauto-interview",
   "version": "1.0.0",
-  "description": "Package used for the technical part of the interview",
-  "main": "index.js",
-  "repository": "https://github.com/Arthy000/g1-platform-testauto-interview.git",
-  "author": "Arthur Warnier <arthur.warnier@gaming1.com>",
+  "description": "Interview project for G1 automated testers",
+  "repository": "https://github.com/QC-Gaming1/g1-platform-testauto-interview.git",
+  "author": "Gaming1 QC",
   "license": "MIT",
-  "private": true,
-  "dependencies": {
-    "@cucumber/cucumber": "^7.3.1",
-    "@cucumber/cucumber-expressions": "^12.1.1",
-    "gherkin-testcafe": "^5.1.0",
-    "testcafe": "^1.15.1"
-  },
   "scripts": {
-    "e2e": "gherkin-testcafe chrome features/*.feature steps/*.js -e"
+    "e2e": "cucumber-js features/**/*.feature -c runnerConfiguration/cucumber.mjs"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^9.1.2",
+    "@cucumber/cucumber-expressions": "^16.1.2",
+    "@cucumber/pretty-formatter": "1.0.0",
+    "ts-node": "10.9.1",
+    "typescript": "4.7.4",
+    "playwright": "^1.33.0",
+    "@playwright/test": "^1.33.0",
+    "@cucumber/messages": "^21.0.0"
   }
 }
