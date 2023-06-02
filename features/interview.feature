@@ -13,11 +13,13 @@ Feature: Interview
     # Do this test as it was a professional project: Be careful about the naming of your variables and functions,
     # your code structure, ...
 
+    # Do not directly clone the project, create a fork on your own account (don't forget to make it public)
+
     # After all set up is done, you have two (2) hours to complete the test.
     # If you have any questions you can contact Dominique Pino (dominique.pino@gaming1.com)
-    # At the end of the test, send your files to Dominique Pino (dominique.pino@gaming1.com)
-    # The ".ts" files could be blocked by the mail provider, so it's recommended to change their extention to ".txt"
-    # You need to send back the following fils : interview.feature, interview.ts, pageModel.ts
+    # At the end of the test, either you send the link to your project to Dominique Pino (dominique.pino@gaming1.com)
+    # or you can fork the project and send the link of your repository (don't forget to make it public)
+    # Don't forget to remove your credentials from the configuration.ts file
 
     # Task 1: Add a test case for twitter
     Scenario Outline: Open <website>
@@ -31,7 +33,7 @@ Feature: Interview
             | google   |
             | facebook |
 
-    # For the website of your choice (github is recommended), implement the task 2 and 3.
+    # The next two tests will target the website of your choice (github is recommended).
     # You can put the credentials used for your test in the configuration.ts file.
     # When you send the files back, don't send the configuration.ts, only specify the url of the used website
     # Hint : Use something else than a check on the URL

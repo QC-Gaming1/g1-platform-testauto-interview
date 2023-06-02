@@ -3,7 +3,7 @@
 This is the documentation regarding the technical test for QC Software Engineer
 in Test Automation.
 
-Read it carefully. Or don't, if you dare.
+Read it carefully
 
 ## Table of contents
 
@@ -12,8 +12,7 @@ Read it carefully. Or don't, if you dare.
 3. [Goals of the test](#goals-of-the-test)
    1. [Familiarization with the tools](#familiarization-with-the-tools)
    2. [Comprehension of the documentation](#comprehension-of-the-documentation)
-      1. [TestCafe](#testcafe)
-      2. [Gherkin-TestCafe](#gherkin-testcafe)
+      1. [The runner](#the-runner)
    3. [Scenario definition](#scenario-definition)
       1. [Titles](#titles)
       2. [Step order and semantics](#step-order-and-semantics)
@@ -37,7 +36,7 @@ To start, you will need:
 - [Yarn](https://classic.yarnpkg.com/en/docs/install#windows-stable)
 - [Visual Studio Code](https://code.visualstudio.com/)
 
-Once you have cloned the repo and installed all the tools, you can open a
+Once you have cloned the repository and installed all the tools, you can open a
 terminal and use
 
 ```bash
@@ -48,7 +47,7 @@ It will install all the required packages.
 
 ## Starting the scripts
 
-In a terminal, start the [e2e script](./package.json#L17) by typing
+In a terminal, start the [e2e script](./package.json#L9) by typing
 
 ```bash
 yarn e2e
