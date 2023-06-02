@@ -10,7 +10,7 @@ export const createPageModel = (testController: ITestController) => {
   return {
     myWebSite: {
       home: {
-        loginButton: page.locator("CSS selector").click(),
+        loginButton: page.locator("CSS selector"),
       },
       loginForm: {
         usernameInput: page.locator("CSS selector"),

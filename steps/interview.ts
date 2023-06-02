@@ -5,7 +5,7 @@ import { Given, When, Then } from "@cucumber/cucumber";
 import { expect } from "@playwright/test";
 import { defineParameterType } from "@cucumber/cucumber";
 import { WEBSITE_INFORMATION } from "../configuration";
-import { createPageModel } from "./pageModel";
+import { createPageModel } from "../pageModel/pageModel";
 
 type WebSiteUrls = {
   [key: string]: string;
@@ -27,8 +27,8 @@ const webSitesUrl: WebSiteUrls = {
 Given(
   "the user opened my website",
   async function (this: ITestController): Promise<void> {
-    const t = this.page!;
-    await t.goto(WEBSITE_INFORMATION.URL);
+    const page = this.page!;
+    await page.goto(WEBSITE_INFORMATION.URL);
   }
 );
 
@@ -37,8 +37,8 @@ Given(
 When(
   "the user navigates to {website}",
   async function (this: ITestController, website: string): Promise<void> {
-    const t = this.page!;
-    await t.goto(webSitesUrl[website]);
+    const page = this.page!;
+    await page.goto(webSitesUrl[website]);
   }
 );
 
@@ -54,7 +54,7 @@ When(
 Then(
   "{website} should be displayed",
   async function (this: ITestController, website: string): Promise<void> {
-    const t = this.page!;
-    await expect(t).toHaveURL(webSitesUrl[website]);
+    const page = this.page!;
+    await expect(page).toHaveURL(webSitesUrl[website]);
   }
 );
