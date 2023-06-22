@@ -16,6 +16,7 @@
     "typescript": "4.7.4",
     "playwright": "^1.33.0",
     "@playwright/test": "^1.33.0",
-    "@cucumber/messages": "^21.0.0"
+    "@cucumber/messages": "^21.0.0",
+    "node-fetch": "^3.3.1"
   }
 }
