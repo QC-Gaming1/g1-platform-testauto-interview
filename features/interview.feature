@@ -2,9 +2,9 @@ Feature: Interview
 
     This is where you will find and define scenarios
 
-    # This feature file contains the steps definitions of several exercices you'll need to do
+    # This feature file contains the steps definitions of several exercises you'll need to do
 
-    # Each test in an exercices. In the first exercices you'll only need to complete existing tests
+    # Each test in an exercises. In the first exercises you'll only need to complete existing tests
     # and in the last ones, you'll have to write full test cases.
 
     # All documentation you'll need can be found in the README.md file, so take your time to read it.
@@ -57,21 +57,15 @@ Feature: Interview
     # there should be AT LEAST 1 FINISHED tournament displayed on the FINISHED tournament page
     #
     # Hint:
-    #   - On luckygames many element have a unique data-testid which can be used to easily identify them
+    #   - On luckygames many element have a unique data-testid which can be used to easily identify them. Check "getByTestId"
     #   - Playwright doesn't allow visibility checks on locator which matches several elements
     #     Check the function ".nth()"
     Scenario: Name of your scenario
         Then Implement the test
 
-    # On the website https://www.circus.be/, on the registration form, when a user enters their birthdate and
-    # then they click on the national number field, it should be auto filled with the information about this
-    # birthdate with the following format : YY.DD.MM-
-    #
-    # Task 5a: Create a scenario which will check this behavior for a user being exactly 18 years old
-    #
-    # Task 5b: Based on the previous scenario add another one which checks the behavior for a user being 18 years old + 1 day
-    #
-    # Hint : You can share data between steps by saving them into "ITestController.parameters"
+    # Task 5: Using "fetch" from "node-fetch", and this api endpoint:http://fakerestapi.azurewebsites.net/api/v1/Books
+    # Get the list of books and return a string containing those information for each book:
+    # Book: title (Published: publishDate) in ascending order on publishDate and with one book per line
     Scenario: Name of your scenario
         Then Implement the test
 
