@@ -17,8 +17,10 @@ Feature: Interview
 
     # After all set up is done, you have two (2) hours to complete the test.
     # If you have any questions you can contact Dominique Pino (dominique.pino@gaming1.com)
-    # At the end of the test, either you send the link to your project to Dominique Pino (dominique.pino@gaming1.com)
-    # or you can fork the project and send the link of your repository (don't forget to make it public)
+    # At the end of the test, either you send the following files to your project to Dominique Pino (dominique.pino@gaming1.com):
+    # interview.feature, pageModel.ts interview.ts (and any other files you would have created). If ts files are not accepted byt
+    # mail change their extension into "txt".
+    # Or you can fork the project and send the link of your repository (don't forget to make it public)
     # Don't forget to remove your credentials from the configuration.ts file
 
     # Task 1: Add a test case for twitter
