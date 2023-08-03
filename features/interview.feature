@@ -1,6 +1,6 @@
 Feature: Interview
 
-    This is where you will find and define scenarios
+    This is where you will find and define test scenarios
 
     # This feature file contains the steps definitions of several exercises you'll need to do
 
@@ -15,8 +15,7 @@ Feature: Interview
 
     # Do not directly clone the project, create a fork on your own account (don't forget to make it public)
 
-    # After all set up is done, you have two (2) hours to complete the test.
-    # If you have any questions you can contact Dominique Pino (dominique.pino@gaming1.com)
+    # After the test starts, you have two hours and half to complete the test.
     # At the end of the test, either you send the following files to your project to Dominique Pino (dominique.pino@gaming1.com):
     # interview.feature, pageModel.ts interview.ts (and any other files you would have created). If ts files are not accepted byt
     # mail change their extension into "txt".
