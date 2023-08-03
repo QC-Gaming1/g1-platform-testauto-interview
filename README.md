@@ -7,25 +7,25 @@ Read it carefully
 
 ## Table of contents
 
-1. [Installation](#installation)
-2. [Starting the scripts](#starting-the-scripts)
-3. [Goals of the test](#goals-of-the-test)
-   1. [Familiarization with the tools](#familiarization-with-the-tools)
-   2. [Comprehension of the documentation](#comprehension-of-the-documentation)
-      1. [The runner](#the-runner)
-   3. [Scenario definition](#scenario-definition)
-      1. [Titles](#titles)
-      2. [Step order and semantics](#step-order-and-semantics)
-   4. [Scenario implementation](#scenario-implementation)
-      1. [Code quality](#code-quality)
-      2. [Test logic](#test-logic)
-4. [Guidelines](#guidelines)
-   1. [Cucumber](#cucumber)
-      1. [Scenario organization](#scenario-organization)
-      2. [Step naming](#step-naming)
-   2. [JavaScript/TypeScript](#javascripttypescript)
-      1. [Logic reusability](#logic-reusability)
-      2. [Linter warnings](#linter-warnings)
+- [g1-platform-testauto-interview](#g1-platform-testauto-interview)
+  - [Table of contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Starting the scripts](#starting-the-scripts)
+  - [Goals of the test](#goals-of-the-test)
+    - [Where to start](#where-to-start)
+    - [Familiarization with the tools](#familiarization-with-the-tools)
+    - [Comprehension of the documentation](#comprehension-of-the-documentation)
+      - [The runner](#the-runner)
+    - [Scenario definition](#scenario-definition)
+      - [Titles](#titles)
+      - [Step order and semantics](#step-order-and-semantics)
+    - [Scenario implementation](#scenario-implementation)
+  - [Guidelines](#guidelines)
+    - [Cucumber](#cucumber)
+      - [Scenario organization](#scenario-organization)
+      - [Step naming](#step-naming)
+    - [TypeScript](#typescript)
+      - [Logic reusability](#logic-reusability)
 
 ## Installation
 
@@ -44,6 +44,8 @@ yarn
 ```
 
 It will install all the required packages.
+
+**/!\\** If you have some of the tools already installed, be sure they have the right version. **/!\\**
 
 ## Starting the scripts
 
